@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+section{
+    display: flex;
+    flex-direction: row;
+    margin-left: 5vw;
+}
+.nav{
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    align-content: center;
+    justify-content: space-between;
+    gap:10px;
+    color: #fff;
+
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: #ffd000;
+}
+.logoHolder{
+    display: inline-flex;
+    align-content: center;
+    flex-direction: row;
+    align-items: center;
+    font-size: 30px;
+}
+.logoHolder img{
+    height: 50px;
+    width: 50px;
+}
+.info ul{
+    columns: 5;
+    list-style: none;
+    margin-left: 10vw;
+    margin-top: 2vh;
+    font-size: 25px;
+}
+.searchBar input{
+    outline: none;
+    border: none;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 20px;
+    color: rgb(255, 255, 255)!important;
+    background-color: #5555556c;
+}
+/*FOR JS USE btn*/
+.searchBar i{
+    border-radius: 50%;
+    background-color: #ffd000;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    color: black;
+}
+.searchBar i:hover{
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+/*News Title*/
+#Main-News{
+    gap:10px;
+    margin-left: 20vh;
+}
+.News-Holder-container{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    background-color: #fff;
+    height: 50vh;
+    width: 40vw;
+    margin-left:2vw;
+    border-radius: 20px 20px 20px 20px;
+    
+}
+.Author-name h1{
+    color: black!important;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.title h1{
+    margin-top: 20px;
+    color: black!important;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 50px;
+    text-align: left;
+}
+.Description{
+    margin-top: 10px;
+    text-align: justify;
+}
+.readMore{
+    display: flex;
+    justify-content: start;
+    align-content: center;
+    align-items: center;
+}
+.readMore button{
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    height: 40px;
+    width: 100px;
+    margin-top: 20px;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+.readMore i{
+    font-size: 25px;
+}
+.readMore i:hover{
+    transform: scale(1.01);
+    transition: 1ms ease-in;
+    cursor: pointer;
+}
+.Image-Display-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 61vh;
+    width: 30vw;
+    border-radius: 20px 20px 20px 20px;
+}
+.Image-Display-container img{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    margin: 2px;
+    background-size:inherit;
+}
+.Image-Display-container img:hover{
+    transform: scale(1.01);
+    transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+    cursor: pointer;
+    z-index: 1;
+
+}
+/*Secondary Container*/
+.Secondary-news{
+    display: inline-flex;
+    flex-direction: row;
+    margin-left: 6.8vw;
+    margin-top: 10px;
+    width: 43.6vw;
+    height: 19vh;
+    border-radius: 20px 20px 20px 20px;
+    padding: 10px;  
+    background-color:  #e2908a;
+    align-content: center;
+    justify-content: baseline;
+    align-items: center;
+}
+.imageSecond img{
+    height: 120px;
+    width: 110px;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.newsFlash p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-left: 20px;
+    white-space: nowrap; 
+    overflow: hidden; 
+    animation: typing 5s infinite linear; /
+}
+
+@keyframes typing {
+    from {
+        width: 0; 
+    }
+    to {
+        width: 100%; 
+    }
+}
+.extra{
+    margin-top: 20px;
+    margin-left: -71%;
+    margin-top: 60px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: lighter;
+}
+.readMore button:hover{
+    cursor: pointer;
+    background-color: #fff;
+    color: black;
+    transition: 2ms ease-in-out;
+}
+
+/*Third Container*/
+.ternary-news{
+    border: 2px solid #fff;
+    width: 30vw;
+    height: 22vh;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 20px;
+}
